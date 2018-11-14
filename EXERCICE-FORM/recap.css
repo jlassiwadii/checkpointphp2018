@@ -1,0 +1,56 @@
+body{
+    padding:30px;
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc0tuaScez_hBKswE9fvzNQ0YQfUg0tTK27adg8IYCDNOzpWVL") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+h1{
+    font-family: "serif";
+    font-size: 50px;
+    color:black;
+    text-align: center;
+}
+#formulaire{
+    text-align: center;
+
+}
+.nom{
+    width:300px;
+    background:white;
+}
+.prenom{
+    margin-top: 10px;
+    width:300px;
+    background:white;
+}
+.nombre{
+    margin-top: 10px;
+width:300px;
+background:white;
+}
+.adresse{
+    margin-top: 10px;
+    width:300px;
+    background:white;
+}
+#ingredient{
+    margin-top: 10px;
+    width:300px;
+    background:white;
+}
+.p-sandwitch{
+    font-family: "serif";
+    font-size: 20px;
+    font-weight: bold;
+    color:black;
+
+}
+.garniture-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
