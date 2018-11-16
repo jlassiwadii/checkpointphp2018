@@ -1,0 +1,40 @@
+<html>
+<head>
+<link  rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="recap.css">
+</head>
+<body >
+<h1  align="center"> commande Sandwitch</h1>
+<form action="recap.php"  method="post" id="formulaire" enctype="multipart/form-data">
+    <input type="text" class="nom" name="nom" placeholder="First Name"><br>
+    <input type="text"  class="prenom"name="prenom" placeholder="Last Name"><br>
+    <input type="text" class="nombre" name="nombre" placeholder="Number of sandwitch" ><br>
+    <textarea name="adresse"  class="adresse" placeholder="Enter your adresse here..." ></textarea><br>
+
+    <p class="p-sandwitch">Le type du Sandwich est:</p>
+    <select  name="ingredient" >
+        <option selected hidden>Ingredients</option>
+        <option value="Viande">Viande</option>
+        <option value="Poulet">Poulet</option>
+        <option value="Escalope">Escalope</option>
+    </select>
+    <br> <br>
+
+    <p class="p-sandwitch">Les garnitures sont:</p>
+
+
+
+    <input type="checkbox"  name="garniture[]" value="harissa"> Harissa<br>
+    <input type="checkbox"  name="garniture[]" value="salade"> Salade<br>
+    <input type="checkbox"  name="garniture[]"  value="mayonnaise" > Mayonnaise<br><br>
+    <p>
+        Envoi d'image :<br />
+        <input type="file" name="fiche" /><br />
+    </p>
+
+   <button name="commander" class="btn btn-primary">Commander</button>
+</form>
+
+</body>
+</html>
+
