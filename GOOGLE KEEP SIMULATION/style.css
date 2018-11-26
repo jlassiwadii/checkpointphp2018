@@ -1,0 +1,125 @@
+
+
+
+body {
+    background-color: #dbdbdb;
+    font-size: 100%;
+}
+form{
+    width: 400px;
+    margin: auto;
+}
+form input#note_text {
+    display: block;
+    margin: 0;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 18px;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    padding: 10px;
+    border: solid 3px #39b8a3;
+    transition: border 0s;
+}
+form input#note_text:focus{
+    border: solid 3px #4895c4;
+}
+form input#add_button{
+    border: none;
+    display: block;
+    margin: 10px auto;
+    width: 426px;
+    color: #ffffff;
+    font-size: 14px;
+    background: #39b8a3;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+form input#add_button:hover{
+    background: #4895c4;
+    text-decoration: none;
+}
+form select#note_color{
+    height: 30px;
+    width: 426px;
+    margin-bottom: 10px;
+}
+form button{
+    background-color: rgba(22, 168, 168, 0.65);
+    border: none;
+    margin-bottom: 10px;
+    padding: 0;
+    margin: 0;
+    width: 98px;
+    height: 40px;
+}
+button#yellow {
+
+}
+/* sticky note */
+ul{
+    width: 900px;
+    margin: auto;
+}
+ul#stickies li {
+    display: block;
+    list-style: none;
+    z-index: 1;
+    float: left;
+    margin: 30px;
+    padding: 15px 15px 50px 15px;
+    width: 80px;
+    height: 70px;
+    border: 1px solid #bfbfbf;
+    background-color: rgba(255, 254, 162, 0.77);
+    color: black;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+    overflow: hidden;
+}
+
+ul#stickies li span.sticky {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 80%;
+}
+
+/*
+ * rotation
+ */
+ul#stickies li:nth-child(even) {
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    transform: rotate(2deg);
+}
+
+ul#stickies li:nth-child(odd) {
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    -o-transform: rotate(-1deg);
+    -ms-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+}
+
+ul#stickies li:nth-child(3n) {
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    transform: rotate(1deg);
+}
+
+/*
+   Transform demo
+   Uses the transition (defined above) to ease in.
+*/
+ul#stickies li:hover {
+    -webkit-transform: rotate(0deg) scale(1.25);
+    -moz-transform: rotate(0deg) scale(1.25);
+    -o-transform: rotate(0deg) scale(1.25);
+    -ms-transform: rotate(0deg) scale(1.25);
+    transform: rotate(0deg) scale(1.25);
+    z-index: 10;
+}
