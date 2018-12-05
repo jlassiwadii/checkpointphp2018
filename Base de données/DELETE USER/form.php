@@ -1,0 +1,28 @@
+<?php
+require 'connexionPDO.php';
+
+
+$cnxPdo = connexionPDO::getInstance();
+
+
+
+?>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<table class="table table-bordered">
+    <form class="form-control" method="post"  action="update.php">  <!--update-->
+        <div class="ajout"> CIN:<input class="form-control" value="<?= $_GET['cin'] ?>" type="text"  name="cin"></div>
+        <div class="ajout"> Nom:<input class="form-control" type="text" name="nom"></div>
+        <div class="ajout"> Prenom:<input type="text" name="prenom" class="form-control"></div>
+        <div class="ajout"> age:<input type="text" name="age" class="form-control"></div>
+        <div class="ajout"><input type="submit" value="envoyer" class="btn btn-primary"></div>
+    </form>
+</table>
+</body>
+</html>
